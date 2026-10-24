@@ -1,0 +1,8 @@
+{
+  "Sugarcane": { "N": 100, "P": 46, "K": 60, "note": "Split N into 3 doses: basal, 45 DAP, 90 DAP." },
+  "Cotton": { "N": 80, "P": 40, "K": 40, "note": "Apply full P & K as basal; split N in 2-3 doses." },
+  "Soybean": { "N": 20, "P": 60, "K": 40, "note": "Low N (legume fixes its own); higher P for nodulation." },
+  "Onion": { "N": 100, "P": 50, "K": 50, "note": "Avoid chloride-based potash near bulb maturity." },
+  "Wheat": { "N": 60, "P": 30, "K": 20, "note": "Apply half N + full P & K at sowing, rest N at first irrigation." },
+  "Maize": { "N": 80, "P": 40, "K": 20, "note": "Top dress N at knee-high and tasseling stages." }
+}

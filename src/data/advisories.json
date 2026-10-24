@@ -1,0 +1,42 @@
+[
+  {
+    "id": "A1",
+    "type": "alert",
+    "title": "Pink Bollworm Alert in Cotton",
+    "titleMr": "कापसावर गुलाबी बोंडअळीचा इशारा",
+    "crop": "Cotton",
+    "date": "2026-08-05",
+    "body": "Pheromone trap catches rising across Vidarbha belt. Farmers advised to install 5 traps/acre and consider Coragen or Emamectin Benzoate spray if ETL (8-10 moths/trap/week) is crossed.",
+    "bodyMr": "विदर्भ भागात कामगंध सापळ्यात पतंगांची संख्या वाढत आहे. एकरी ५ सापळे लावावेत व गरज भासल्यास कोराजेन किंवा इमामेक्टीन बेंझोएट फवारणी करावी."
+  },
+  {
+    "id": "A2",
+    "type": "advisory",
+    "title": "Kharif Soybean: Ideal Time for Second Top Dressing",
+    "titleMr": "खरीप सोयाबीन: दुसऱ्या टॉप ड्रेसिंगसाठी योग्य वेळ",
+    "crop": "Soybean",
+    "date": "2026-08-08",
+    "body": "With current rainfall pattern, apply 12:32:16 or Urea top dressing at 25-30 DAS for better pod setting. Avoid nitrogen excess to reduce vegetative flush.",
+    "bodyMr": "सध्याच्या पावसाच्या स्थितीनुसार २५-३० दिवसांनी १२:३२:१६ किंवा युरियाची मात्रा द्यावी."
+  },
+  {
+    "id": "A3",
+    "type": "alert",
+    "title": "Purple Blotch Risk in Onion Nursery",
+    "titleMr": "कांदा रोपवाटिकेत जांभळा करपा रोगाचा धोका",
+    "crop": "Onion",
+    "date": "2026-08-09",
+    "body": "High humidity conditions favor purple blotch development. Prophylactic spray of Mancozeb 75% WP recommended at 10-day interval starting now.",
+    "bodyMr": "जास्त आर्द्रतेमुळे जांभळा करपा रोगाचा प्रादुर्भाव होण्याची शक्यता आहे. मॅन्कोझेब फवारणी करावी."
+  },
+  {
+    "id": "A4",
+    "type": "advisory",
+    "title": "Rabi Wheat Sowing Window Opens Late October",
+    "titleMr": "रब्बी गहू पेरणीसाठी योग्य कालावधी ऑक्टोबर अखेर",
+    "crop": "Wheat",
+    "date": "2026-08-10",
+    "body": "Plan seed procurement early — timely sown Lokwan varieties (last week Oct - first week Nov) give best yield response in this region.",
+    "bodyMr": "बियाणे आधीच नियोजन करा — योग्य वेळी पेरणी केल्यास चांगले उत्पादन मिळते."
+  }
+]
