@@ -129,10 +129,16 @@ export default function ProductFormModal({ product, onClose }) {
             <label className={labelCls}>Safety & Regulatory Notes</label>
             <textarea rows={2} value={form.safety} onChange={e => set('safety', e.target.value)} className={inputCls} />
           </div>
-          <div>
-            <label className={labelCls}>Description</label>
-            <textarea rows={2} value={form.description} onChange={e => set('description', e.target.value)} className={inputCls} />
-          </div>
+         <div>
+  <label className={labelCls}>Description*</label>
+  <textarea
+    required
+    rows={2}
+    value={form.description}
+    onChange={e => set('description', e.target.value)}
+    className={inputCls}
+  />
+</div>
           <label className="flex items-center gap-2 text-sm text-forest-800">
             <input type="checkbox" checked={form.featured} onChange={e => set('featured', e.target.checked)} />
             Feature this product on homepage

@@ -8,14 +8,17 @@ export default function AdminLogin({ navigate }) {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (login(username, password)) {
-      setError('')
-    } else {
-      setError('Invalid username or password.')
-    }
+ const handleSubmit = async (e) => {
+  e.preventDefault()
+
+  const success = await login(username, password)
+
+  if (success) {
+    setError('')
+  } else {
+    setError('Invalid email or password.')
   }
+}
 
   return (
     <div className="min-h-screen bg-forest-900 flex items-center justify-center px-4 bg-leaf-texture">
@@ -37,7 +40,7 @@ export default function AdminLogin({ navigate }) {
               <User size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-forest-700/40" />
               <input
                 value={username} onChange={e => setUsername(e.target.value)}
-                type="text" placeholder="Username" required
+                type="email" placeholder="Email Address" required
                 className="w-full pl-10 pr-3.5 py-2.5 rounded-lg border border-forest-200 text-sm focus:border-emerald-600 outline-none"
               />
             </div>
@@ -55,8 +58,8 @@ export default function AdminLogin({ navigate }) {
             </button>
           </form>
           <p className="text-[11px] text-forest-700/50 text-center mt-5">
-            Demo credentials — user: <code className="font-mono-label">admin</code> / pass: <code className="font-mono-label">yash@2026</code>
-          </p>
+  Demo email: <code className="font-mono-label">admin@example.com</code>
+</p>
         </div>
       </div>
     </div>

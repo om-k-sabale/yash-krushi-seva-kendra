@@ -13,7 +13,14 @@ export default function ProductCatalog() {
   const [activeProduct, setActiveProduct] = useState(null)
 
   useEffect(() => {
-    const onSearch = (e) => setFilters(f => ({ ...f, query: e.detail }))
+    const onSearch = (e) => setFilters(f => ({
+  ...f,
+  query: e.detail,
+  category: '',
+  crop: '',
+  brand: ''
+}))
+
     const onFilterCategory = (e) => setFilters(f => ({ ...f, category: e.detail }))
     window.addEventListener('ykk:search', onSearch)
     window.addEventListener('ykk:filter-category', onFilterCategory)

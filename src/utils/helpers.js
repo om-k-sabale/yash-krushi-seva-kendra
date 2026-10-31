@@ -13,9 +13,36 @@ export function buildWhatsappLink(phoneWithCountryCode, message) {
   return `https://wa.me/${phoneWithCountryCode}?text=${encoded}`
 }
 
-export function productOrderMessage(product, lang) {
+export function productOrderMessage(product, lang, quantity = 1) {
   if (lang === 'mr') {
-    return `नमस्कार, मला "${product.name}" (${product.brand}) हे उत्पादन हवे आहे.\nमात्रा/डोस: ${product.dosage}\nकिंमत: ₹${product.price} / ${product.unit}\nकृपया साठा व उपलब्धतेची खात्री करा.`
+    return `नमस्कार! 🙏
+
+मला यश कृषि सेवा केंद्रातून खालील उत्पादन खरेदी करायचे आहे.
+
+उत्पादन: ${product.name}
+ब्रँड: ${product.brand || 'उपलब्ध नाही'}
+प्रमाण: ${quantity} ${product.unit || 'युनिट'}
+किंमत: ₹${product.price} / ${product.unit || 'युनिट'}
+एकूण किंमत: ₹${product.price * quantity}
+मात्रा व वापर: ${product.dosage || 'कृपया माहिती द्या'}
+
+कृपया उपलब्ध साठा आणि ऑर्डरची पुष्टी करा.
+
+धन्यवाद! 🌱`;
   }
-  return `Hello, I would like to order "${product.name}" (${product.brand}).\nDosage: ${product.dosage}\nPrice: ₹${product.price} / ${product.unit}\nPlease confirm stock availability.`
+
+  return `Namaste! 🙏
+
+I would like to purchase the following product from Yash Krushi Seva Kendra.
+
+Product: ${product.name}
+Brand: ${product.brand || 'Not specified'}
+Quantity: ${quantity} ${product.unit || 'units'}
+Price: ₹${product.price} / ${product.unit || 'unit'}
+Estimated Total: ₹${product.price * quantity}
+Dosage: ${product.dosage || 'Please provide details'}
+
+Could you please confirm stock availability and order details?
+
+Thank you! 🌱`;
 }
